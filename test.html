@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+        }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+        }
+        .download-button {
+            background-color: #00C4CC;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        .download-button:hover {
+            background-color: #00a6b0;
+        }
+        .info-text {
+            color: #aaa;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="bingo_icon.png" alt="Bingo!" class="app-icon">
+        <h1>Bingo!</h1>
+        <a id="download-link" href="https://myvegasbingo.sng.link/Ae7vn/3z5d?_dl=myvegasbingo%3A%2F%2Fref%3Fref_id%3D1111&_smtype=3" class="download-button">DOWNLOAD APP</a>
+        <p class="info-text">Please press the button to proceed to your app</p>
+    </div>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = document.getElementById('download-link').href;
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
